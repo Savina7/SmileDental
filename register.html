@@ -1,0 +1,48 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dental Clinic Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="login-wrapper">
+    <form action="register_action.php" method="post" class="login-form">
+        <div class="imgcontainer">
+            <img src="img_dental_logo.png" alt="Clinic Logo" class="avatar">
+        </div>
+
+        <div class="container">
+            <label for="fullname"><b>Full Name</b></label>
+            <input type="text" placeholder="Enter Full Name" name="fullname" required>
+
+            <label for="email"><b>Email</b></label>
+            <input type="email" placeholder="Enter Email" name="email" required>
+
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Choose Username" name="uname" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+
+            <label for="psw-repeat"><b>Confirm Password</b></label>
+            <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+
+            <button type="submit">Register</button>
+
+            <label class="remember">
+                <input type="checkbox" checked="checked" name="terms"> I agree to the <a href="#">Terms & Conditions</a>
+            </label>
+        </div>
+
+        <div class="container footer">
+            <button type="button" class="cancelbtn" onclick="this.closest('form').reset()">Cancel</button>
+            <span class="psw">Already have an account? <a href="login.html">Login</a></span>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>

@@ -83,7 +83,7 @@ nav {
 .footer {
     background-color: #DCEFF5; /* light but visible */
     color: #023E8A;
-    padding: 40px 40px;
+    padding: 0px 40px;
     display: flex;
     justify-content: center; /* center columns */
     gap: 80px; /* space between columns */
@@ -94,7 +94,8 @@ nav {
 .footer-col {
     flex: 0 0 250px;
     margin: 0px 60px;
-
+    position: relative;
+    top: 40px;
 }
 
 .footer-logo {

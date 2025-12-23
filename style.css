@@ -65,11 +65,139 @@ nav {
     background-color: #7ad3e6;
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 1px; /* space between logo and text */
+    font-size: 22px;
+    font-weight: 700;
+    color: #023E8A;
+}
+
+.logo img {
+    height: 40px; /* control logo size */
+    width: auto; /* keep proportions */
+}
+
+
+.footer {
+    background-color: #DCEFF5; /* light but visible */
+    color: #023E8A;
+    padding: 40px 40px;
+    display: flex;
+    justify-content: center; /* center columns */
+    gap: 80px; /* space between columns */
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.footer-col {
+    flex: 0 0 250px;
+    margin: 0px 60px;
+
+}
+
+.footer-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.footer-logo img {
+    height: 40px;
+}
+
+.social-icons {
+    margin-top: 15px;
+    padding-left: 45px;
+}
+
+.social-icons img {
+    height: 24px;
+    margin: 0 8px;
+    cursor: pointer;
+}
+
+.contact-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+.contact-item img {
+    height: 18px;
+}
+
+.footer a {
+    color: #023E8A;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.adress-icon {
+    margin-bottom: 28px;
+}
+
+.footer-bottom {
+    width: 100%;
+    border-top: 1px solid #BFDDE8;
+    text-align: center;
+    font-size: 13px;
+    color: #023E8A;
+}
+
+.home {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* FULL viewport height */
+    overflow: hidden; /* prevent scrollbars from extra image overflow */
+}
+
+/* Image */
 .home-photo {
     width: 100%;
-    max-width: 2000px;
-    min-width: 600px;  /* never smaller than 400px */
-    height: auto;
+    height: 100%; /* full container height */
+    object-fit: cover; /* scale nicely */
     display: block;
-    margin: 0 auto;
+}
+
+/* Text container ON image */
+.home-text-box {
+    position: absolute;
+    top: 40%;
+    left: 30%; /* adjust horizontal position */
+    transform: translate(-50%, -50%);
+    text-align: left;
+
+    background: rgba(0, 0, 0, 0.001); /* semi-transparent black */
+    padding: 30px 20px;
+    border-radius: 14px;
+    color: white;
+}
+
+/* Main text */
+.home-text {
+    font-family: 'Lustria', serif;
+    font-size: 100px;
+    font-weight: 300;
+    margin-bottom: 15px;
+    max-width: 550px;
+}
+
+/* Smaller text */
+.home-subtext {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;
+    max-width: 600px;
+    line-height: 1.5;
 }
